@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import fab.the.chemist.spring.basics.BinarySearchImpl;
+import fab.the.chemist.spring.basics.BinarySearchImpl; 
 
 @Configuration
 @ComponentScan //springboot le fait par defaut, mais avec @configuration il faut le preciser

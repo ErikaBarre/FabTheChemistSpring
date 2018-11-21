@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 //@Scope("prototype")
 //@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-public class BinarySearchImpl {
+public class BinarySearchImpl { 
 	
 	private org.slf4j.Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 	
