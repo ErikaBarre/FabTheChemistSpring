@@ -24,8 +24,8 @@ public class SpringframeworkContextApplication {
 		//avec spring avec application context
 		//ApplicationContext applicationContext = 
 			//	new AnnotationConfigApplicationContext(SpringframeworkContextApplication.class);
-		AnnotationConfigApplicationContext applicationContext = 
-				new AnnotationConfigApplicationContext(SpringframeworkContextApplication.class);
+		try( AnnotationConfigApplicationContext applicationContext = 
+				new AnnotationConfigApplicationContext(SpringframeworkContextApplication.class)){
 		
 		BinarySearchImpl binarySearchImpl =applicationContext.getBean(BinarySearchImpl.class);
 		
@@ -42,7 +42,8 @@ public class SpringframeworkContextApplication {
 		System.out.println(result);
 		//SomeSearchImpl someSearchImpl = applicationContext.getBean(SomeSearchImpl.class);
 		
-		applicationContext.close();
-		
+		//avec le try , si erreur c'est autoclosable , pas besoin de placer le close explicite
+		//applicationContext.close();
+		}
 	}
 }
