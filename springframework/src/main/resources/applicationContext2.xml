@@ -12,9 +12,9 @@
 	>
 
 
-<context:component-scan base-package="fab.the.chemist">
+<context:component-scan base-package="fab.the.chemist" >
 </context:component-scan>
-  <bean id="xmlJdbcConnection"
+   <bean id="xmlJdbcConnection"
           class="fab.the.chemist.spring.basics.xml.XmlJdbcConnection">
        
     </bean>
@@ -22,7 +22,7 @@
       <bean id="xmlPersonDao"
           class="fab.the.chemist.spring.basics.xml.XmlPersonDao">
         <property name="xmlJdbcConnection" ref="xmlJdbcConnection" />
-    </bean>
+    </bean> 
 
 
 </beans>
