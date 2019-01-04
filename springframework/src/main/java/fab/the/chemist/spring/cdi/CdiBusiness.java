@@ -17,4 +17,15 @@ public class CdiBusiness {
 		this.cdiDao = cdiDao;
 	}
 	
+	public int findGreatest() {
+		int greatTest = Integer.MIN_VALUE;
+		int[] datas = cdiDao.getData();
+		for(int data : datas) {
+			if(data >greatTest) {
+				greatTest = data;
+			}
+		}
+		return greatTest;
+	}
+	
 }
