@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fab.the.chemist</groupId>
+  <artifactId>springwebapplication</artifactId>
+  <version>0.0.1</version>
+  <packaging>war</packaging>
+  
+  <repositories>
+	<repository>
+			<id>local jars</id>
+			<name>local jars</name>
+			<url>file://${basedir}/</url>
+	</repository>
+	<repository>
+			<id>local pi jars</id>
+			<name>local jars</name>
+			<url>file://${basedir2}/</url>
+	</repository>
+	<repository>
+	      <id>Maven</id>
+	      <url>https://mvnrepository.com/repos/central</url>
+    </repository>
+		
+	<repository>
+		<id>Activiti</id>
+		<url>https://maven.alfresco.com/nexus/content/groups/public/</url>
+	</repository>
+ 
+	<repository>
+		<id>postgres</id>
+		<url>https://mvnrepository.com</url>
+	</repository>
+	<repository>
+	 <id>repository.springframework.maven.milestone</id>
+	 <name>Spring Framework Maven Milestone Repository</name>
+	 <url>http://repo.spring.io/milestone/</url>
+	 </repository>
+	</repositories> 
+  
+  <dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>6.0</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		
+		
+	</dependencies>
+  
+  
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+      		
+			 <!--    <groupId>org.apache.tomcat.maven</groupId>
+    <artifactId>tomcat8-maven-plugin</artifactId>
+    <version>3.0-r1756463</version> -->
+
+      		
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+			 			<configuration>
+				<path>/</path>
+				<contextReloadable>true</contextReloadable>
+			</configuration>
+		</plugin>
+    </plugins>
+  </build>
+</project>
