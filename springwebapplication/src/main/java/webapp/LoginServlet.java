@@ -37,10 +37,11 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		
-		//  ?name=Erika
-		System.out.println(request.getParameter("name"));
+		// http://localhost:8080?name=Erika&password=abc
+		System.out.println(request.getParameter("name") + " affichage depuis servlet java");
 		
-		request.setAttribute("name", "Barre");
+		request.setAttribute("name", request.getParameter("name") + " profession: playmate");
+		request.setAttribute("password", request.getParameter("password"));
 		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
 		/*
 		PrintWriter out = response.getWriter(); 
@@ -55,4 +56,16 @@ public class LoginServlet extends HttpServlet {
 		*/
 	}
 
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		
+		// http://localhost:8080?name=Erika&password=abc
+		System.out.println(request.getParameter("name") + " affichage depuis servlet java");
+		
+		request.setAttribute("name", request.getParameter("name") + " profession: playmate");
+		request.setAttribute("password", request.getParameter("password"));
+		request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
+	
+	}
+	
 }

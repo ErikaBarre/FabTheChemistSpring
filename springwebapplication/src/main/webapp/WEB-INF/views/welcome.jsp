@@ -10,19 +10,13 @@
 <%
 
 System.out.println("Jessica Biel [jsp]");
-System.out.println("---" + request.getParameter("name") + " afficage depuis la jsp");
+System.out.println("---" + request.getParameter("name") + " afficage depuis la jsp (j'ai encvie de faire caca)");
 Date d = new Date();
 %>
 <body>
 <div><%=d %></div>
-My first jsp ${name} and I give my password in the worldwide, this is ${password}
+Welcome ${name} and you password is ${password}
 
-<form action="/login.do" method="post">
-Enter you name 
-<input type="text" name="name"/>
-<input type="password" name="password"/> 
-<input type="submit" value="Login"/>
 
-</form>
 </body>
 </html>
