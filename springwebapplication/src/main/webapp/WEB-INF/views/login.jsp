@@ -15,7 +15,8 @@ Date d = new Date();
 %>
 <body>
 <div><%=d %></div>
-My first jsp ${name} and I give my password in the worldwide, this is ${password}
+<!-- My first jsp ${name} and I give my password in the worldwide, this is ${password} -->
+${message}
 
 <form action="/login.do" method="post">
 Enter you name 
