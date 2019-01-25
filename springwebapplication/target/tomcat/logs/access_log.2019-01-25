@@ -1,0 +1,6 @@
+127.0.0.1 - - [25/Jan/2019:23:58:29 +0100] "GET /spring-mvc HTTP/1.1" 404 971 http-bio-8080-exec-2 41
+127.0.0.1 - - [25/Jan/2019:23:58:36 +0100] "GET /spring-mvc/login HTTP/1.1" 404 983 http-bio-8080-exec-3 2
+127.0.0.1 - - [25/Jan/2019:23:58:53 +0100] "GET / HTTP/1.1" 200 473 http-bio-8080-exec-4 71
+127.0.0.1 - - [25/Jan/2019:23:59:01 +0100] "GET /login HTTP/1.1" 404 961 http-bio-8080-exec-5 2
+127.0.0.1 - - [25/Jan/2019:23:59:50 +0100] "GET /spring/login HTTP/1.1" 404 949 http-bio-8080-exec-6 41
+127.0.0.1 - - [25/Jan/2019:23:59:57 +0100] "GET /spring HTTP/1.1" 404 949 http-bio-8080-exec-7 1

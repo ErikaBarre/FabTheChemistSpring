@@ -1,0 +1,4 @@
+127.0.0.1 - - [26/Jan/2019:00:11:47 +0100] "GET /spring/login HTTP/1.1" 200 16 http-bio-8080-exec-9 61
+127.0.0.1 - - [26/Jan/2019:00:12:44 +0100] "GET /login HTTP/1.1" 404 961 http-bio-8080-exec-10 2
+127.0.0.1 - - [26/Jan/2019:00:13:02 +0100] "GET /spring/login HTTP/1.1" 200 16 http-bio-8080-exec-10 2
+127.0.0.1 - - [26/Jan/2019:00:40:16 +0100] "GET /spring/login HTTP/1.1" 200 448 http-bio-8080-exec-3 37
